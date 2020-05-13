@@ -1,0 +1,46 @@
+{
+    /* Editor */
+    // Files
+    "files.encoding": "utf8",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.mypy_cache": true
+    },
+    // License
+    "licenser.disableAutoHeaderInsertion": true,
+    "licenser.useSingleLineStyle": true,
+    "licenser.license": "AGPLv3",
+    "licenser.author": "Ashton Hellwig",
+    "licenser.projectName": "cvcb",
+    /* Programming Languages */
+    // Python
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "python.condaPath": "/home/ahelliwg/anaconda3/bin/conda",
+    "python.pythonPath": "/home/ahellwig/anaconda3/envs/cvcb/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    /// Linting
+    "python.linting.enabled": true,
+    "python.linting.banditEnabled": false,
+    "python.linting.pylamaEnabled": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.prospectorEnabled": false,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/home/ahellwig/anaconda3/envs/cvcb/bin/flake8",
+    "python.linting.flake8Args": [],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "/home/ahellwig/anaconda3/envs/cvcb/bin/mypy",
+    // Formatting
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/home/ahellwig/anaconda3/envs/cvcb/bin/yapf",
+    "python.formatting.yapfArgs": []
+}

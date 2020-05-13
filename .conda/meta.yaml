@@ -1,0 +1,42 @@
+{% set data = load_setup_py_data() %}
+
+package:
+  name: cvcb
+  version: {{ data['version'] }}
+
+source:
+  path: ../
+
+extra:
+  channels:
+    - defaults
+    - conda-forge
+
+requirements:
+  build:
+    - click=7.1.2
+    - flake8=3.7.9
+    - jedi=0.17.0
+    - mypy=0.770
+    - mypy_extensions=0.4.3
+    - yapf=0.28.0
+
+  run:
+    - python
+    {% for dep in data['install_requires'] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+    - futures-compat
+
+build:
+  number: 1
+  noarch: python
+
+about:
+  home: https://github.com/ashellwig/cvcb
+  license_file: LICENSE
+  summary: >-
+    Helps with the job application process by automatically cycling through
+    your job details on the clipboard.
+  description: {{ data['long_description'] }}
+  dev_url: {{ data['url'] }}

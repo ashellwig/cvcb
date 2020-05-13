@@ -1,0 +1,13 @@
+name: cvcb
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8=hcff3b4d_14
+  - click=7.1.2=py_0
+  - flake8=3.7.9=py38_0
+  - jedi=0.17.0=py38_0
+  - mypy=0.770=py_0
+  - mypy_extensions=0.4.3=py38_0
+  - yapf=0.28.0=py_0
+prefix: /home/ahellwig/anaconda3/envs/cvcb
