@@ -6,6 +6,41 @@
     "licenser.author": "Ashton Hellwig",
     "licenser.projectName": "cvcb",
     /* Programming Languages */
+    // Shellscript
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "shellformat.path": "/home/ahellwig/go/bin/shfmt",
+    "shellformat.flag": "-ln bash -i 2 -bn -ci -sr",
+    "shellformat.effectLanguages": [
+        "shellscript",
+        "dotenv",
+        "ignore",
+        "gitignore"
+    ],
+    "shellcheck.enable": true,
+    "shellcheck.executablePath": "/home/ahellwig/.local/bin/shellcheck",
+    "shellcheck.customArgs": [
+        "--check-sourced",
+        "--color=auto",
+        "--format=tty",
+        "--source-path=SCRIPTDIR/lib/lib.sh",
+        "--shell=bash",
+        "--severity=style",
+        "--external-sources"
+    ],
+    "shellcheck.run": "onSave",
+    "shellcheck.enableQuickFix": false,
+    "shellcheck.exclude": [],
+    "shellcheck.ignorePatterns": {
+        "**/*.zsh": true
+    },
+    "shellcheck.useWorkspaceRootAsCwd": false,
     // Python
     "[python]": {
         "editor.formatOnSave": true,
@@ -52,5 +87,8 @@
     // Spell Checker
     "cSpell.ignoreWords": [
         "conda"
+    ],
+    "cSpell.words": [
+        "noqa"
     ]
 }

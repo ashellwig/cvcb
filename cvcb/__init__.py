@@ -1,4 +1,4 @@
-from .cli import hello
+from .cli import hello as cli  # noqa: F401
 
-if __name__ == 'main':
-    hello()
+if __name__ == '__main__':
+    cli()
