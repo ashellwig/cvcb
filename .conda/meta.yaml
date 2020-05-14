@@ -35,7 +35,10 @@ requirements:
 
 test:
   imports:
-    -
+    - cvcb
+  requires:
+    -pytest=5.4.1
+    -tox=3.15.0
 
 about:
   home: https://github.com/ashellwig/cvcb
