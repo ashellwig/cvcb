@@ -1,15 +1,4 @@
 {
-    /* Editor */
-    // Files
-    "files.encoding": "utf8",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/.mypy_cache": true
-    },
     // License
     "licenser.disableAutoHeaderInsertion": true,
     "licenser.useSingleLineStyle": true,
@@ -42,5 +31,26 @@
     // Formatting
     "python.formatting.provider": "yapf",
     "python.formatting.yapfPath": "/home/ahellwig/anaconda3/envs/cvcb/bin/yapf",
-    "python.formatting.yapfArgs": []
+    "python.formatting.yapfArgs": [],
+    /* Editor */
+    // Files
+    "files.encoding": "utf8",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.mypy_cache": true
+    },
+    // Terminal
+    "terminal.integrated.env.linux": {
+        "PYTHON": "/home/ahellwig/anaconda3/envs/cvcb/bin/python"
+    },
+    "terminal.integrated.environmentChangesIndicator": "on",
+    "terminal.integrated.inheritEnv": true,
+    // Spell Checker
+    "cSpell.ignoreWords": [
+        "conda"
+    ]
 }

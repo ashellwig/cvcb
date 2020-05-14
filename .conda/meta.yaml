@@ -6,31 +6,36 @@ package:
 
 source:
   path: ../
+  git_rev: 
 
 extra:
   channels:
     - defaults
     - conda-forge
 
+build:
+  number: 1
+  noarch: python
+
 requirements:
+  host:
+    - pip
+    - python
   build:
     - click=7.1.2
     - flake8=3.7.9
     - jedi=0.17.0
     - mypy=0.770
-    - mypy_extensions=0.4.3
     - yapf=0.28.0
-
   run:
     - python
     {% for dep in data['install_requires'] %}
     - {{ dep.lower() }}
     {% endfor %}
-    - futures-compat
 
-build:
-  number: 1
-  noarch: python
+test:
+  imports:
+    -
 
 about:
   home: https://github.com/ashellwig/cvcb
