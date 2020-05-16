@@ -11,7 +11,7 @@ with open(version_path) as version_file:
 
 # Long Description via README.md
 with open('README.md', 'r') as fh:
-    long_description = fh.read()
+    long_description: str = fh.read()
 
 setup(name='cvcb',
       version=main_ns['__version__'],
