@@ -67,7 +67,15 @@
     "python.formatting.provider": "yapf",
     "python.formatting.yapfPath": "/home/ahellwig/anaconda3/envs/cvcb/bin/yapf",
     "python.formatting.yapfArgs": [],
+    // Docstrings
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.generateDocstringOnEnter": true,
+    "autoDocstring.includeName": false,
+    "autoDocstring.quoteStyle": "'''",
+    "autoDocstring.startOnNewLine": false,
+    "autoDocstring.guessTypes": true,
     /* Editor */
+    "git.enableCommitSigning": true,
     // Files
     "files.encoding": "utf8",
     "files.exclude": {

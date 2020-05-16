@@ -3,7 +3,7 @@ from .gui import app
 
 
 @click.command()
-def hello() -> None:
+def cycle() -> None:
     click.echo('Hello, world!')
 
 
@@ -11,6 +11,15 @@ def hello() -> None:
 @click.option('--gui/--no-gui', default=False)
 @click.option('--verbose/--quiet', default=False)
 def run(gui, verbose):
+    '''Runs the application.
+
+    Parameters
+    ----------
+    gui : bool
+        Use the GUI.
+    verbose : bool
+        Output more information in the console.
+    '''
     if verbose:
         print('We are now running the application.')
     if gui:
